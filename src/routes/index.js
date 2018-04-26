@@ -7,14 +7,12 @@ import Header from './Header';
 import './css/index.css'
 
 export default () => (
-  <div className = "App">
   <BrowserRouter>
     <div>
     <Route path = "/" component = {Header} />
     <Route path = "/home" component = {Home} />
     <Route path = "/about" component = {About} />
     </div>
-  </BrowserRouter>
-  </div>);
+  </BrowserRouter>);
 
   // <App />, document.getElementById('root')

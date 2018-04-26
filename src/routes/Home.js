@@ -1,5 +1,4 @@
 import React from 'react';
-import brain from './img/brain.png';
 import './css/Home.css';
 
 export default () => (

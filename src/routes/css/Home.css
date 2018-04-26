@@ -14,7 +14,7 @@
     border: 3px solid #222;
     cursor: pointer; }
     .Home button:hover {
-      background-color: transparent;
+      background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
       color: #222; }
   .Home h1 {
     font-size: 4em; }

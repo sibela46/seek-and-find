@@ -1,7 +1,7 @@
 import React from 'react';
 import brain from './img/brain.png';
 import './css/App.css';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default () => (
     <header className="App-header">
