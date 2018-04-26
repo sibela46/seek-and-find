@@ -8,8 +8,9 @@ export default () => (
       <img className="logo" src = {brain} width = "80" alt = "brain"/>
       <h1 className="App-title">Търси и ще намериш.</h1>
       <div className = "routes">
-        <Link to = '/about'><h2>About</h2></Link>
-        <Link to = "/home"><h2>Home</h2></Link>
+        <Link to = '/about'><h2>За мен</h2></Link>
+        <Link to = '/places'><h2>Места</h2></Link>
+        <Link to = "/seek-and-find"><h2>Начало</h2></Link>
       </div>
     </header>
 );

@@ -1,0 +1,35 @@
+@import "_fonts.scss";
+@import "_colours.scss";
+
+.placesContainer{
+  text-align: center;
+  h1{
+    margin-top: 0;
+    padding: 20px;
+    font-size: 3em;
+  }
+  background-color: $pastel-green;
+  width: 100%;
+}
+
+.categories1{
+  float: left;
+  margin-left: 130px;
+}
+
+.categories2{
+  float: right;
+  margin-right: 130px;
+}
+
+.sightseeings, .mountain, .sea, .village{
+  position: relative;
+  h1{
+    background: linear-gradient(rgba(255,255,255,.3), rgba(255,255,255,.3));
+    color: $white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
