@@ -10,7 +10,12 @@
   height: 50px;
   padding: 15px;
   color: white;
-  text-align: left; }
+  text-align: center; }
+  .App-header h2 {
+    float: right;
+    position: relative;
+    margin: 0.5em 1em 0 0;
+    color: #ffffff; }
 
 .App-title {
   font-size: 2em;

@@ -11,7 +11,13 @@
   height: 50px;
   padding: 15px;
   color: white;
-  text-align: left;
+  text-align: center;
+  h2 {
+    float: right;
+    position: relative;
+    margin: 0.5em 1em 0 0;
+    color: $white;
+  }
 }
 
 .App-title {
