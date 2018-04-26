@@ -2,7 +2,7 @@
   "name": "seek-and-find",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://sibela46.github.io/seek-and-find",
+  "homepage": "http://sibela46.github.io/",
   "dependencies": {
     "express": "4.13.3",
     "history": "^1.17.0",

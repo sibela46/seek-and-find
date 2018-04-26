@@ -4,7 +4,6 @@ import './css/App.css';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 export default () => (
-  <div className="App">
     <header className="App-header">
       <img className="logo" src = {brain} width = "80" alt = "brain"/>
       <h1 className="App-title">Търси и ще намериш.</h1>
@@ -13,5 +12,4 @@ export default () => (
         <Link to = "/home"><h2>Home</h2></Link>
       </div>
     </header>
-  </div>
 );
