@@ -1,6 +1,7 @@
 import React from 'react';
+import Header from './Header';
 
-export default class Home extends React.Component {
+export default class About extends React.Component {
   render () {
     return (
     <div>
