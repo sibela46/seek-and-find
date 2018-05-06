@@ -3,18 +3,21 @@ import brain from './img/brain.png';
 import './css/App.css';
 import { Link } from "react-router-dom";
 
-var current = document.getElementsByClassName("active");
-var startPath = "";
+var start = true;
 
 export default class Header extends React.Component {
   componentDidMount(){
     var startPath = window.location.pathname;
-    console.log(document.getElementsByClassName(startPath)[0].className);
-    document.getElementsByClassName(startPath)[0].id += "active";
+    document.getElementsByClassName(startPath)[0].id += "start-active";
   }
   toggleClass(event) {
-    var current = document.getElementsById("active");
-    current.id.replace("active", "");
+    if (start){
+      document.getElementById("start-active").id = "";
+      start = false;
+    }
+    else{
+      document.getElementById("active").id = "";
+    }
     event.target.id += "active";
   }
   render() {

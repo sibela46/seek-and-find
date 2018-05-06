@@ -22,7 +22,12 @@
       border: 2px solid #ffffff;
       bottom: 3px; }
 
-#active h2 {
+#active {
+  border: 2px solid #ffffff;
+  padding: 2px;
+  bottom: 4px; }
+
+#start-active h2 {
   border: 2px solid #ffffff;
   padding: 2px;
   bottom: 4px; }
