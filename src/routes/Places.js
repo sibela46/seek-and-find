@@ -5,7 +5,6 @@ import sea from './img/sea.jpg';
 import village from './img/village.jpg';
 import './css/Places.css';
 import {Link} from 'react-router-dom';
-import Header from './Header';
 
 export default class Places extends React.Component {
   render(){

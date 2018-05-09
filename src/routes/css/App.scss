@@ -27,11 +27,11 @@
   }
 }
 
-#active{
+.active{
   h2{
+    padding: 3px;
     border: 2px solid $white;
-    padding: 2px;
-    bottom: 4px;
+    bottom: 5px;
   }
 }
 
