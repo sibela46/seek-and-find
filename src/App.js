@@ -15,12 +15,12 @@ export default () => (
       <div>
       <Route path = "/" component = {Header} />
       <Route path = "/seek-and-find" component = {Home} />
-      <Route path = "/places" component = {Places} />
       <Route path = "/about" component = {About} />
-      <Route path = "/sea" component = {Sea} />
+      <Route path = "/places" component = {Places} />
       <Route path = "/sightseeings" component = {Sight} />
-      <Route path = "/mountain" component = {Mountain} />
-      <Route path = "/village" component = {Villages} />
+      <Route path = "/mountains" component = {Mountain} />
+      <Route path = "/villages" component = {Villages} />
+      <Route path = "/sea" component = {Sea} />
       </div>
     </BrowserRouter>
   </div>);

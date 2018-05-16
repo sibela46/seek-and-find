@@ -71,3 +71,17 @@ button{
     font-size: 2em;
   }
 }
+
+.search-container{
+  margin: 40px;
+  font-size: 20px;
+}
+
+.search-box{
+  width: 70%;
+  border-radius: 20px;
+  padding: 10px;
+  border: 2px solid $black;
+  font-family: $font-secondary;
+  background: linear-gradient(rgba(123,211,137,.2), rgba(123,211,137,.2));;
+}
