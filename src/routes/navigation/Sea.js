@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import topics from '../sea-places/all-sea-places';
 
 export default class Sea extends React.Component {
   constructor(){
@@ -31,6 +33,13 @@ export default class Sea extends React.Component {
            value = {this.state.value}
            onChange = {this.handleChange.bind(this)}/>
         </div>
+        <ul>
+          {topics.map(({name, id}) => (
+            <li key = {id}>
+              <Link to ={`/sea/${id}`}>{name}</Link>
+            </li>
+          ))}
+        </ul>
       </div>
     );
   }

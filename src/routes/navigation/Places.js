@@ -1,9 +1,9 @@
 import React from 'react';
-import church from './img/church.jpg';
-import mountain from './img/mountains.jpg';
-import sea from './img/sea.jpg';
-import village from './img/village.jpg';
-import './css/Places.css';
+import church from './nav-css/nav-img/church.jpg';
+import mountain from './nav-css/nav-img/mountains.jpg';
+import sea from './nav-css/nav-img/sea.jpg';
+import village from './nav-css/nav-img/village.jpg';
+import './nav-css/Places.css';
 import {Link} from 'react-router-dom';
 
 export default class Places extends React.Component {

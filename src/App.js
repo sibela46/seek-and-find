@@ -1,13 +1,14 @@
 import React from 'react';
 import {BrowserRouter, Route} from 'react-router-dom';
-import Home from './routes/Home';
-import About from './routes/About';
-import Places from './routes/Places';
-import Sea from './routes/Sea';
-import Mountain from './routes/Mountain';
-import Sight from './routes/Sight';
-import Villages from './routes/Village';
-import Header from './routes/Header';
+import Home from './routes/navigation/Home';
+import About from './routes/navigation/About';
+import Places from './routes/navigation/Places';
+import Sea from './routes/navigation/Sea';
+import Mountain from './routes/navigation/Mountain';
+import Sight from './routes/navigation/Sight';
+import Villages from './routes/navigation/Village';
+import Header from './routes/navigation/Header';
+import SeaContainer from './routes/sea-places/SeaContainer';
 
 export default () => (
   <div className = "App">
@@ -20,7 +21,8 @@ export default () => (
       <Route path = "/sightseeings" component = {Sight} />
       <Route path = "/mountains" component = {Mountain} />
       <Route path = "/villages" component = {Villages} />
-      <Route path = "/sea" component = {Sea} />
+      <Route exact path = "/sea" component = {Sea}/>
+      <Route path = '/sea/:seaId' component = {SeaContainer}/>
       </div>
     </BrowserRouter>
   </div>);

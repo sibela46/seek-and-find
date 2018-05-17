@@ -1,6 +1,6 @@
 import React from 'react';
-import brain from './img/brain.png';
-import './css/App.css';
+import brain from './nav-css/nav-img/brain.png';
+import './nav-css/App.css';
 import { Link } from "react-router-dom";
 import NavLink from "./nav_link";
 
