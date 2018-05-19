@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import topics from '../sea-places/all-sea-places';
+import '../sea-places/sea-css/Sea-Container.css';
 
 const images = importAll(require.context('../sea-places/sea-css/sea-img', false, /\.(png|jpe?g|svg)$/));
 
@@ -40,19 +41,19 @@ export default class Sea extends React.Component {
            value = {this.state.value}
            onChange = {this.handleChange.bind(this)}/>
         </div>
-        <ul>
+        <div className = "sea-container">
           {topics.map(({name, id, image, description}) => (
-            <li key = {id}>
-              <img key = {image} src = {images[image]} width = "300" alt = ""/>
+            <ul key = {id}>
               <Link to ={{
                 pathname: `/sea/${id}`,
                 state: {
                   fromSea: {name, image, description},
                 }
-              }}>{name}</Link>
-            </li>
+              }}><h2>{name}</h2></Link>
+              <img key = {image} src = {images[image]} width = "300" alt = ""/>
+            </ul>
           ))}
-        </ul>
+        </div>
       </div>
     );
   }

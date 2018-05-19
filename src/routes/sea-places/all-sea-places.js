@@ -9,13 +9,13 @@ const topics = [
     name: "Якото място",
     id: "1",
     description: "Тва е някъв къмпинг.",
-    image: "",
+    image: "Arapya.jpg",
   },
   {
     name: "Иракли",
     id: "2",
     description: "Чувала съм, че е яко.",
-    image: ""
+    image: "Arapya.jpg"
   }
 ]
 
