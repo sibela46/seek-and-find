@@ -49,8 +49,10 @@ export default class Sea extends React.Component {
                 state: {
                   fromSea: {name, image, description},
                 }
-              }}><h2>{name}</h2></Link>
-              <img key = {image} src = {images[image]} width = "300" alt = ""/>
+              }}>
+                <h2>{name}</h2>
+              </Link>
+              <img key = {image} src = {images[image]} width = "300" height = "200" alt = ""/>
             </ul>
           ))}
         </div>
