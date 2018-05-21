@@ -8,7 +8,10 @@ import Mountain from './routes/navigation/Mountain';
 import Sight from './routes/navigation/Sight';
 import Villages from './routes/navigation/Village';
 import Header from './routes/navigation/Header';
+import SightContainer from './routes/sight-places/SightContainer';
 import SeaContainer from './routes/sea-places/SeaContainer';
+import VillageContainer from './routes/village-places/VillageContainer';
+import MountainContainer from './routes/mountain-places/MountainContainer';
 
 export default () => (
   <div className = "App">
@@ -17,12 +20,15 @@ export default () => (
       <Route path = "/" component = {Header} />
       <Route path = "/seek-and-find" component = {Home} />
       <Route path = "/about" component = {About} />
-      <Route path = "/places" component = {Places} />
+      <Route exact path = "/places" component = {Places} />
       <Route path = "/sightseeings" component = {Sight} />
       <Route path = "/mountains" component = {Mountain} />
       <Route path = "/villages" component = {Villages} />
-      <Route exact path = "/sea" component = {Sea}/>
-      <Route path = '/sea/:seaId' component = {SeaContainer}/>
+      <Route path = "/sea" component = {Sea}/>
+      <Route path = '/places/sight/:placeId' component = {SightContainer}/>
+      <Route path = '/places/sea/:placeId' component = {SeaContainer}/>
+      <Route path = '/places/village/:placeId' component = {VillageContainer}/>
+      <Route path = '/places/mountain/:placeId' component = {MountainContainer}/>
       </div>
     </BrowserRouter>
   </div>);

@@ -3,14 +3,6 @@ import { Link } from 'react-router-dom';
 import topics from '../sight-places/all-sight-places';
 import './nav-css/PlacesContainer.css';
 
-const images = importAll(require.context('../sight-places/sight-img', false, /\.(png|jpe?g|svg)$/));
-
-function importAll(r) {
-  let images = {};
-  r.keys().map((item, index) => { images[item.replace('./', '')] = r(item);});
-  return images;
-}
-
 export default class SightSeeings extends React.Component {
   constructor(){
     super();
@@ -41,14 +33,14 @@ export default class SightSeeings extends React.Component {
             <ul key = {id}>
               <div className = "single-place">
                 <Link to ={{
-                  pathname: `/sight/${id}`,
+                  pathname: `/places/sight/${id}`,
                   state: {
                     fromSea: {name, image, description},
                   }
                 }}>
                   <h2>{name}</h2>
+                  <img key = {image} src = {require(`../sight-places/sight-img/${image}`)} width = "300" height = "200" alt = ""/>
                 </Link>
-                <img key = {image} src = {images[image]} width = "300" height = "200" alt = ""/>
               </div>
             </ul>
           ))}

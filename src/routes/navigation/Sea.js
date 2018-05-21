@@ -3,13 +3,6 @@ import { Link } from 'react-router-dom';
 import topics from '../sea-places/all-sea-places';
 import './nav-css/PlacesContainer.css';
 
-const images = importAll(require.context('../sea-places/sea-css/sea-img', false, /\.(png|jpe?g|svg)$/));
-
-function importAll(r) {
-  let images = {};
-  r.keys().map((item, index) => { images[item.replace('./', '')] = r(item);});
-  return images;
-}
 export default class Sea extends React.Component {
   constructor(){
     super();
@@ -39,14 +32,14 @@ export default class Sea extends React.Component {
           {topics.map(({name, id, image, description}) => (
             <ul key = {id}>
               <Link to ={{
-                pathname: `/sea/${id}`,
+                pathname: `/places/sea/${id}`,
                 state: {
                   fromSea: {name, image, description},
                 }
               }}>
                 <h2>{name}</h2>
+              <img key = {image} src = {require(`../sea-places/sea-img/${image}`)} width = "300" height = "200" alt = ""/>
               </Link>
-              <img key = {image} src = {images[image]} width = "300" height = "200" alt = ""/>
             </ul>
           ))}
         </div>

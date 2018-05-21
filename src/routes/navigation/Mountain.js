@@ -1,10 +1,50 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import topics from '../mountain-places/all-mountain-places';
+import './nav-css/PlacesContainer.css';
 
 export default class Mountain extends React.Component {
+  constructor(){
+    super();
+    this.state = {
+      value: "",
+      start: true,
+    };
+    this.handleChange = this.handleChange.bind(this);
+  }
+  handleChange(event) {
+    if (this.state.start){
+      this.setState({
+        value: "",
+        start: false,
+      })
+    }
+    else {
+      this.setState({
+        value: event.target.value,
+      });
+    }
+  }
   render () {
     return (
       <div>
-        Mountain
+        <div className = "places-container">
+          {topics.map(({name, id, image, description}) => (
+            <ul key = {id}>
+              <div className = "single-place">
+                <Link to ={{
+                  pathname: `/places/mountain/${id}`,
+                  state: {
+                    fromSea: {name, image, description},
+                  }
+                }}>
+                  <h2>{name}</h2>
+                  <img key = {image} src = {require(`../mountain-places/mountain-img/${image}`)} width = "300" height = "200" alt = ""/>
+                </Link>
+              </div>
+            </ul>
+          ))}
+        </div>
       </div>
     );
   }
