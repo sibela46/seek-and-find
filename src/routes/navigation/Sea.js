@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import topics from '../sea-places/all-sea-places';
-import '../sea-places/sea-css/Sea-Container.css';
+import './nav-css/PlacesContainer.css';
 
 const images = importAll(require.context('../sea-places/sea-css/sea-img', false, /\.(png|jpe?g|svg)$/));
 
@@ -35,13 +35,7 @@ export default class Sea extends React.Component {
   render () {
     return (
       <div>
-        <div className = "search-container">
-          <input className = "search-box"
-           placeholder = "Въведи име"
-           value = {this.state.value}
-           onChange = {this.handleChange.bind(this)}/>
-        </div>
-        <div className = "sea-container">
+        <div className = "places-container">
           {topics.map(({name, id, image, description}) => (
             <ul key = {id}>
               <Link to ={{
@@ -60,3 +54,11 @@ export default class Sea extends React.Component {
     );
   }
 };
+
+
+// <div className = "search-container">
+// <input className = "search-box"
+// placeholder = "Въведи име"
+// value = {this.state.value}
+// onChange = {this.handleChange.bind(this)}/>
+// </div>

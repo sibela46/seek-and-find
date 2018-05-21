@@ -70,3 +70,7 @@ button {
   border: 2px solid #222;
   font-family: "Open Sans Condensed", sans-serif;
   background: linear-gradient(rgba(123, 211, 137, 0.2), rgba(123, 211, 137, 0.2)); }
+
+p {
+  font-family: "Open Sans Condensed", sans-serif;
+  margin: 0 10em 0 10em; }

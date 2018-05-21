@@ -1,0 +1,26 @@
+.places-container {
+  margin: 2em; }
+  .places-container ul {
+    display: inline-grid;
+    text-decoration: none;
+    text-align: center; }
+    .places-container ul:hover h2 {
+      font-size: 2.2em; }
+    .places-container ul:hover img {
+      border: 3px solid #d84144; }
+  .places-container h2 {
+    -webkit-transition: font-size 0.2s ease-out;
+    -moz-transition: font-size 0.2s ease-out;
+    -o-transition: font-size 0.2s ease-out;
+    transition: font-size 0.2s ease-out;
+    position: absolute;
+    padding: 1em;
+    color: #ffffff;
+    font-size: 2em;
+    text-decoration: none; }
+  .places-container img {
+    border-radius: 10px;
+    -webkit-transition: border 0.2s ease-out;
+    -moz-transition: border 0.2s ease-out;
+    -o-transition: border 0.2s ease-out;
+    transition: border 0.2s ease-out; }

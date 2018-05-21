@@ -12,6 +12,7 @@
     "prop-types": "^15.6.1",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
+    "react-native-image-gradient": "^2.2.5",
     "react-router": "^3.2.1",
     "react-scripts": "1.1.4",
     "webpack": "^3.11.0"
