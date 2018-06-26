@@ -24,7 +24,7 @@ export default class About extends React.Component {
     <div className ="container">
       <p>Centered!</p>
     </div>
-    <div id = "slides">
+    <div id = "slides" style = {{width: '300px', height: '100px'}}>
       <div className = "slide" style = {{display: 'inline-block', background: '#21A0A0', width: '200px', height: '200px'}}>
         <h2>Hello</h2>
       </div>

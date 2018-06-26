@@ -1,11 +1,19 @@
 @import "_colours.scss";
 @import "_fonts.scss";
 
+/////////////////////////////////////
+// FIRST QUESTION
+/////////////////////////////////////
+.container {
+  p {
+    text-align: center;    
+  }
+}
+/////////////////////////////////////
+
 #slides {
   margin: auto;
   width: 50%;
-  width: 300px;
-  height: 100px;
 }
 
 .prev, .next {
@@ -19,6 +27,16 @@
   }
 }
 
+.buttons {
+  position: absolute;
+  margin: auto;
+  width: 100%;
+  margin-top: 100px;
+}
+
+////////////////////////////////////
+// SECOND QUESTION
+////////////////////////////////////
 .slide {
   display: none;
   border-radius: 10px;
@@ -33,13 +51,6 @@
   }
 }
 
-.buttons {
-  position: absolute;
-  margin: auto;
-  width: 100%;
-  margin-top: 100px;
-}
-
 @keyframes slideInFromRight {
   0% {
     transform: translateX(100%);
@@ -48,3 +59,4 @@
     transform: translateX(0);
   }
 }
+////////////////////////////////////
