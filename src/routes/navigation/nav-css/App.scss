@@ -94,3 +94,23 @@ p{
 img{
   border-radius: 10px;
 }
+
+.map {
+  margin-left: 17em;
+  margin-top: 0;
+}
+
+.mapContainer{
+  text-align: center;
+  background-color: $pastel-green;
+  h1, h2 {
+    -webkit-transition: font-size 0.5s ease-out;
+    -moz-transition: font-size 0.5s ease-out;
+    -o-transition: font-size 0.5s ease-out;
+    transition: font-size 0.5s ease-out;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 20px;
+    font-size: 3em;
+  }
+}

@@ -12,6 +12,7 @@ import SightContainer from './routes/sight-places/SightContainer';
 import SeaContainer from './routes/sea-places/SeaContainer';
 import VillageContainer from './routes/village-places/VillageContainer';
 import MountainContainer from './routes/mountain-places/MountainContainer';
+import Map from './routes/navigation/Map';
 
 export default () => (
   <div className = "App">
@@ -29,6 +30,7 @@ export default () => (
       <Route path = '/places/sea/:placeId' component = {SeaContainer}/>
       <Route path = '/places/village/:placeId' component = {VillageContainer}/>
       <Route path = '/places/mountain/:placeId' component = {MountainContainer}/>
+      <Route path = '/map' component = {Map}/>
       </div>
     </BrowserRouter>
   </div>);

@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700|Open+Sans:300,400,600,700");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Amatic+SC|Open+Sans+Condensed:300|Poiret+One");
+#slides {
+  margin: auto;
+  width: 50%;
+  width: 300px;
+  height: 100px; }
+
+.prev, .next {
+  display: inline-block;
+  font-size: 1em;
+  margin: 0.5em;
+  border: 1px solid #222; }
+  .prev:hover, .next:hover {
+    font-size: 1em;
+    border: 1px solid #222; }
+
+.slide {
+  display: none;
+  border-radius: 10px;
+  position: relative;
+  animation: 500ms ease-out 0s 1 slideInFromRight; }
+  .slide h2 {
+    position: relative;
+    margin: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2em; }
+
+.buttons {
+  position: absolute;
+  margin: auto;
+  width: 100%;
+  margin-top: 100px; }
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%); }
+  100% {
+    transform: translateX(0); } }
