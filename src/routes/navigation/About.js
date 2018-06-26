@@ -13,7 +13,7 @@ export default class About extends React.Component {
     if (current < 0){
       current = slides.length-1;
     }
-    if (current == slides.length){
+    if (current === slides.length){
       current = 0;
     }
     slides[current].style.display = "inline-block";
