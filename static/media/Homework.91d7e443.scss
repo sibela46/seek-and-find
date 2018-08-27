@@ -1,0 +1,62 @@
+@import "_colours.scss";
+@import "_fonts.scss";
+
+/////////////////////////////////////
+// FIRST QUESTION
+/////////////////////////////////////
+.container {
+  p {
+    text-align: center;    
+  }
+}
+/////////////////////////////////////
+
+#slides {
+  margin: auto;
+  width: 50%;
+}
+
+.prev, .next {
+  display: inline-block;
+  font-size: 1em;
+  margin: 0.5em;
+  border: 1px solid $black;
+  &:hover{
+    font-size: 1em;
+    border: 1px solid $black;
+  }
+}
+
+.buttons {
+  position: absolute;
+  margin: auto;
+  width: 100%;
+  margin-top: 100px;
+}
+
+////////////////////////////////////
+// SECOND QUESTION
+////////////////////////////////////
+.slide {
+  display: none;
+  border-radius: 10px;
+  position: relative;
+  animation: 500ms ease-out 0s 1 slideInFromRight;
+  h2 {
+    position: relative;
+    margin: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2em;
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+////////////////////////////////////

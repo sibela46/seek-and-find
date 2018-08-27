@@ -1,0 +1,41 @@
+@import "_fonts.scss";
+@import "_colours.scss";
+
+.Home{
+  font-family: $font-primary;
+  text-align: center;
+  color: $black;
+  h1{
+    font-size: 4em;
+  }
+  p{
+    font-family: $font-secondary;
+    font-size: 1em;
+  }
+}
+
+.Intro{
+  padding: 80px;
+  background: linear-gradient(rgba(255,255,255,.3), rgba(255,255,255,.3)), url("./nav-img/bulgaria.jpg") no-repeat center;
+  background-size: cover;
+  max-width: 100%;
+  height: auto;
+  h1 {
+    font-size: 12vmin;
+  }
+}
+
+.Intro-cont {
+  h1 {
+    background-color: $pastel-green;
+    margin-top: 120px;
+    margin-bottom: 0;
+    padding: 30px
+  }
+  p {
+    color: $white;
+    margin: 0;
+    background-color: $jasper-red;
+    padding: 50px;
+  }
+}
