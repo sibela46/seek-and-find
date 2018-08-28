@@ -26,6 +26,7 @@
     position: relative;
     margin: 0.5em 1em 0 0;
     color: $white;
+    font-size: 4vmin;
     &:hover {
       border: 2px solid $white;
       bottom: 3px;
@@ -49,7 +50,6 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  font-size: 2.5vmin;
   marign-right: 10%;
 }
 .active{
