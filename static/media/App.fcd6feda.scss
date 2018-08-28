@@ -102,6 +102,10 @@ button{
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+}
+
+.search-specific, .search-specific-region {
+  margin: 10px;
   h2 {
     margin-bottom: 5%;
     position: relative;
@@ -109,10 +113,6 @@ button{
     font-size: 1em;
     color: $black;
   }
-}
-
-.search-specific, .search-specific-region {
-  margin: 10px;
 }
 
 .search-regions {
