@@ -28,7 +28,7 @@
       bottom: 3px; }
 
 .logo {
-  width: 14vmin; }
+  width: 11vmin; }
 
 .icon {
   height: 100%;
@@ -41,7 +41,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  font-size: 3vmin;
+  font-size: 2.5vmin;
   marign-right: 10%; }
 
 .active h2 {
