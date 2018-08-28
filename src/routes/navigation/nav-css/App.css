@@ -6,13 +6,18 @@
   font-family: "Amatic SC", cursive; }
 
 .App-header {
+  display: inline-flex;
+  width: -webkit-fill-available;
   background-color: #d84144;
   height: 50px;
   padding: 15px;
   color: white;
   text-align: center; }
+  .App-header a {
+    text-decoration: none; }
   .App-header h1 {
-    font-size: 2em; }
+    font-size: 2vmin;
+    color: #ffffff; }
   .App-header h2 {
     float: right;
     position: relative;
@@ -22,6 +27,23 @@
       border: 2px solid #ffffff;
       bottom: 3px; }
 
+.logo {
+  width: 14vmin; }
+
+.icon {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center; }
+
+.routes {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 3vmin;
+  marign-right: 10%; }
+
 .active h2 {
   padding: 3px;
   border: 2px solid #ffffff;
@@ -29,9 +51,7 @@
 
 .App-title {
   font-size: 2em;
-  position: relative;
-  float: left;
-  margin: 0.2em 0 0 1em; }
+  position: relative; }
 
 .App-intro {
   font-size: large; }
@@ -59,21 +79,9 @@ button {
     border: 3.5px solid #222;
     font-size: 2em; }
 
-.search-container {
-  margin: 40px;
-  font-size: 20px; }
-
-.search-box {
-  width: 70%;
-  border-radius: 20px;
-  padding: 10px;
-  border: 2px solid #222;
-  font-family: "Open Sans Condensed", sans-serif;
-  background: linear-gradient(rgba(123, 211, 137, 0.2), rgba(123, 211, 137, 0.2)); }
-
 p {
   font-family: "Open Sans Condensed", sans-serif;
-  margin: 2em 10em 2em 10em; }
+  margin: 8%; }
 
 img {
   border-radius: 10px; }

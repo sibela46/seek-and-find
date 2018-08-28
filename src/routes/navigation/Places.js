@@ -12,28 +12,37 @@ export default class Places extends React.Component {
       <div id = "Places">
       <div className = "placesContainer">
         <h1>Първо си избери категория:</h1>
-        <div className = "categories1">
-            <div className = "sightseeings">
-            <img src = {church} width = "500" height = "300" alt = "church"/>
-            <Link to = "/sightseeings"><h2>Забележителности</h2></Link>
-            </div>
-            <div className = "mountain">
-            <img src = {mountain} width = "500" height = "300" alt = "mountain"/>
-            <Link to = "mountains"><h2>Планина</h2></Link>
-            </div>
-        </div>
+        <div className="categories">
+          <div className = "categories1">
+              <div className = "sightseeings">
+              <div className="places-container-text">
+              <Link to = "/places/sightseeings"><h2>Забележителности</h2></Link>
+              </div>
+              <img className="img-category" src = {church} alt = "mountain"/>
+              </div>
+              <div className = "mountain">
+              <div className="places-container-text">
+              <Link to = "/places/mountains"><h2>Планина</h2></Link>
+              </div>
+              <img className="img-category" src = {mountain} alt = "mountain"/>
+              </div>
+          </div>
 
-        <div className = "categories2">
-            <div className = "sea">
-            <img src = {sea} width = "500" height = "300" alt = "sea"/>
-            <Link to = "/sea"><h2>Море</h2></Link>
-            </div>
-            <div className = "village">
-            <img src = {village} width = "500" height = "300" alt = "village"/>
-            <Link to = "villages"><h2>Селца</h2></Link>
-            </div>
+          <div className = "categories2">
+              <div className = "sea">
+              <div className="places-container-text">
+              <Link to = "/places/sea"><h2>Море</h2></Link>
+              </div>
+              <img className="img-category" src = {sea} alt = "sea"/>
+              </div>
+              <div className = "village">
+              <div className="places-container-text">
+              <Link to = "/places/villages"><h2>Селца</h2></Link>
+              </div>
+              <img className="img-category" src = {village} alt = "village"/>
+              </div>
+          </div>
         </div>
-
       </div>
       </div>
     )

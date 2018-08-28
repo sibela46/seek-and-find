@@ -7,13 +7,19 @@
 }
 
 .App-header {
+  display: inline-flex;
+  width: -webkit-fill-available;
   background-color: $jasper-red;
   height: 50px;
   padding: 15px;
   color: white;
   text-align: center;
+  a {
+    text-decoration: none;
+  }
   h1 {
-    font-size: 2em;
+    font-size: 2vmin;
+    color: $white;
   }
   h2{
     float: right;
@@ -27,6 +33,25 @@
   }
 }
 
+.logo {
+  width: 14vmin;
+}
+
+.icon {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.routes {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 3vmin;
+  marign-right: 10%;
+}
 .active{
   h2{
     padding: 3px;
@@ -38,8 +63,6 @@
 .App-title {
   font-size: 2em;
   position: relative;
-  float: left;
-  margin: 0.2em 0 0 1em;
 }
 
 .App-intro {
@@ -72,23 +95,9 @@ button{
   }
 }
 
-.search-container{
-  margin: 40px;
-  font-size: 20px;
-}
-
-.search-box{
-  width: 70%;
-  border-radius: 20px;
-  padding: 10px;
-  border: 2px solid $black;
-  font-family: $font-secondary;
-  background: linear-gradient(rgba(123,211,137,.2), rgba(123,211,137,.2));;
-}
-
 p{
   font-family: $font-secondary;
-  margin: 2em 10em 2em 10em;
+  margin: 8%;
 }
 
 img{

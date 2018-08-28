@@ -17,6 +17,8 @@
   background-size: cover;
   max-width: 100%;
   height: auto; }
+  .Intro h1 {
+    font-size: 12vmin; }
 
 .Intro-cont h1 {
   background-color: #7bd389;
