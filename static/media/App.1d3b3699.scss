@@ -95,59 +95,6 @@ button{
   }
 }
 
-.search-container{
-  width: 100%;
-  margin: 10px 0 10px 0;
-  font-size: 20px;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-}
-
-.search-specific, .search-specific-region {
-  margin: 10px;
-  h2 {
-    margin-bottom: 5%;
-    position: relative;
-    padding: 0 10px 0 10px;
-    font-size: 1em;
-    color: $black;
-  }
-}
-
-.search-regions {
-  display:none;
-  text-align: left;
-  h2 {
-    width: 100%;
-    cursor: pointer;
-    font-size: 12px;
-  }
-}
-
-.search-box{
-  width: 20vw;
-  text-decoration: none;
-  border-radius: 20px;
-  padding: 10px;
-  display: flex;
-  border: 2px solid $black;
-  font-family: $font-secondary;
-  background: linear-gradient(rgba(123,211,137,.2), rgba(123,211,137,.2));
-  &:hover {
-    .search-regions {
-      display: block;
-    }
-    span {
-      display: none;
-    }
-  }
-  span {
-    font-size: 13px;
-    color: gray;
-  }
-}
-
 p{
   font-family: $font-secondary;
   margin: 8%;
