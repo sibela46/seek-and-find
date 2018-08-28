@@ -19,10 +19,6 @@
     -moz-transition: font-size 0.2s ease-out;
     -o-transition: font-size 0.2s ease-out;
     transition: font-size 0.2s ease-out;
-    position: absolute;
-    padding: 1em;
-    color: #ffffff;
-    font-size: 2em;
     text-decoration: none;
   }
   img{
@@ -32,4 +28,11 @@
     -o-transition: border 0.2s ease-out;
     transition: border 0.2s ease-out;
   }
+}
+
+.single-place-name {
+  position: absolute;
+  padding: 1em;
+  color: #ffffff;
+  font-size: 2em;
 }
