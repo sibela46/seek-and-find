@@ -2,9 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 @import url("https://fonts.googleapis.com/css?family=Amatic+SC|Open+Sans+Condensed:300|Poiret+One");
 .placesContainer {
-  text-align: center;
-  position: relative;
-  top: calc(8vmin + 30px); }
+  text-align: center; }
   .placesContainer h1, .placesContainer h2 {
     background-color: #7bd389;
     -webkit-transition: font-size 0.5s ease-out;

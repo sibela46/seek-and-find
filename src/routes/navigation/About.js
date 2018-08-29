@@ -20,7 +20,7 @@ export default class About extends React.Component {
   }
   render () {
     return (
-    <div className="about-container">
+    <div className="body-container">
       <div className ="container">
         <p>Centered!</p>
       </div>

@@ -10,7 +10,7 @@ export default class Places extends React.Component {
   render(){
     return(
       <div id = "Places">
-      <div className = "placesContainer">
+      <div className = "placesContainer body-container">
         <h1>Първо си избери категория:</h1>
         <div className="categories">
           <div className = "categories1">

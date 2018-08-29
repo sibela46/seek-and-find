@@ -3,7 +3,9 @@
 @import url("https://fonts.googleapis.com/css?family=Amatic+SC|Open+Sans+Condensed:300|Poiret+One");
 .places-container {
   width: 100%;
-  display: inline-block; }
+  display: inline-block;
+  position: relative;
+  top: calc(8vmin + 30px); }
   .places-container ul {
     padding: 5px;
     float: left;

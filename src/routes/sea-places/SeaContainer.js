@@ -6,7 +6,7 @@ class SeaContainer extends React.Component{
     var image = this.props.location.state.fromSea.image;
     var description = this.props.location.state.fromSea.description;
     return (
-      <div>
+      <div className="body-container">
         <h1>{name}</h1>
         <img className="single-place-image" key = {image} src = {require(`../sea-places/sea-img/${image}`)} alt = ""/>
         <p>{description}</p>

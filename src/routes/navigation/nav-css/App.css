@@ -59,6 +59,11 @@
   float: left;
   position: relative; }
 
+.body-container {
+  position: relative;
+  top: calc(8vmin + 30px);
+  display: inline-block; }
+
 button {
   color: #ffffff;
   background-color: #d84144;
@@ -101,9 +106,3 @@ img {
     margin-bottom: 0;
     padding: 20px;
     font-size: 3em; }
-
-.about-container {
-  height: 100%;
-  position: relative;
-  top: calc(8vmin + 30px);
-  display: inline-block; }

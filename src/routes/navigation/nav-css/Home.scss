@@ -15,8 +15,6 @@
 }
 
 .Intro {
-  position: relative;
-  top: calc(8vmin + 30px);
   animation: 0.5s ease-out 0s 1 slideInFromTop;
   padding: 80px;
   background: linear-gradient(rgba(255,255,255,.3), rgba(255,255,255,.3)), url("./nav-img/bulgaria.jpg") no-repeat center;

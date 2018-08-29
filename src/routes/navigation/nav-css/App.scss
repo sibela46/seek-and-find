@@ -51,8 +51,8 @@
   justify-content: flex-end;
   marign-right: 10%;
 }
-.active{
-  h2{
+.active {
+  h2 {
     padding: 3px;
     border: 2px solid $white;
     bottom: 5px;
@@ -73,7 +73,13 @@
   position: relative;
 }
 
-button{
+.body-container {
+  position: relative;
+  top: calc(8vmin + 30px);
+  display: inline-block;
+}
+
+button {
   color: $white;
   background-color: $jasper-red;
   padding: 0.3em 1em 0.3em 1em;
@@ -108,7 +114,7 @@ img {
   margin-top: 0;
 }
 
-.mapContainer{
+.mapContainer {
   text-align: center;
   background-color: $pastel-green;
   h1, h2 {
@@ -121,11 +127,4 @@ img {
     padding: 20px;
     font-size: 3em;
   }
-}
-
-.about-container {
-  height: 100%;
-  position: relative;
-  top: calc(8vmin + 30px);
-  display: inline-block;
 }
