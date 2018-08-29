@@ -12,7 +12,9 @@
     font-size: 1em; }
 
 .Intro {
-  animation: 0.5s ease-out 0s 1 slideInFromLeft;
+  position: relative;
+  top: calc(8vmin + 30px);
+  animation: 0.5s ease-out 0s 1 slideInFromTop;
   padding: 80px;
   background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("./nav-img/bulgaria.jpg") no-repeat center;
   background-size: cover;
@@ -33,7 +35,7 @@
   background-color: #d84144;
   padding: 50px; }
 
-@keyframes slideInFromLeft {
+@keyframes slideInFromTop {
   0% {
     transform: translateY(-100%); }
   100% {
