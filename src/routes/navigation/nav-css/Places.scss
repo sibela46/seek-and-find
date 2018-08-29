@@ -1,8 +1,10 @@
 @import "_fonts.scss";
 @import "_colours.scss";
 
-.placesContainer{
+.placesContainer {
   text-align: center;
+  position: relative;
+  top: calc(8vmin + 30px);
   h1, h2 {
     background-color: $pastel-green;
     -webkit-transition: font-size 0.5s ease-out;
