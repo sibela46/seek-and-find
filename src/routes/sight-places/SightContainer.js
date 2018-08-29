@@ -8,7 +8,7 @@ class SeaContainer extends React.Component{
     return (
       <div>
         <h1>{name}</h1>
-        <img key = {image} src = {require(`../sight-places/sight-img/${image}`)} width = "500" height = "300" alt = ""/>
+        <img className="single-place-image" key = {image} src = {require(`../sight-places/sight-img/${image}`)} width = "500" height = "300" alt = ""/>
         <p>{description}</p>
       </div>
     )

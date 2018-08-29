@@ -14,7 +14,8 @@
   }
 }
 
-.Intro{
+.Intro {
+  animation: 0.5s ease-in 0s 1 slideInFromTop;
   padding: 80px;
   background: linear-gradient(rgba(255,255,255,.3), rgba(255,255,255,.3)), url("./nav-img/bulgaria.jpg") no-repeat center;
   background-size: cover;
@@ -37,5 +38,14 @@
     margin: 0;
     background-color: $jasper-red;
     padding: 50px;
+  }
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
   }
 }
