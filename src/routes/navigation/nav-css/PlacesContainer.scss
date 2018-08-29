@@ -4,6 +4,8 @@
 .places-container{
   width: 100%;
   display: inline-block;
+  position: relative;
+  top: calc(8vmin + 30px);
   ul {
     padding: 5px;
     float: left;
