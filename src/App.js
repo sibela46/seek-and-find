@@ -16,7 +16,7 @@ export default () => (
     <BrowserRouter>
       <div>
       <Route path = "/" component = {Header} />
-      <Route path = "/seek-and-find" component = {Home} />
+      <Route path = "/" component = {Home} />
       <Route path = "/about" component = {About} />
       <Route exact path = "/places" component = {Places} />
       <Route exact path = "/places/sightseeings" render={()=><SinglePlace place="sight"/>}/>
