@@ -12,6 +12,7 @@
 /////////////////////////////////////
 
 #slides {
+  position: absolute;
   margin: auto;
   width: 50%;
   padding: 0 10px 0 10px;
@@ -33,6 +34,7 @@
 .buttons {
   position: absolute;
   margin: auto;
+  top: 400px;
   width: 100%;
 }
 
@@ -47,6 +49,7 @@
   h2 {
     position: relative;
     margin: 0;
+    padding: 10px;
     top: 50%;
     transform: translateY(-50%);
     font-size: 2em;

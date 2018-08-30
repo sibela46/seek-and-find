@@ -83,7 +83,7 @@ export default class SinglePlace extends React.Component {
             }
           }}>
           <h2 className="single-place-name">{name}</h2>
-          <img key = {image} src = {require(`../${this.props.place}-places/${this.props.place}-img/${image}`)} width = "300" height = "200" alt = ""/>
+          <img className = "single-place-image" key = {image} src = {require(`../${this.props.place}-places/${this.props.place}-img/${image}`)} alt = ""/>
           </Link>
           </ul>
         ))}

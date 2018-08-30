@@ -21,7 +21,7 @@ export default class About extends React.Component {
         text: "Развали ми целия уебсайт. Трудът ми отиде на вятъра.",
         icon: "error",
         dangerMode: true,
-        button: "Шегувам се, кликни тук и всичко ще си дойде по старому."
+        button: "Шегувам се, кликни тук и всичко ще си дойде постарому."
       });
     }
     slides[current].style.display = "inline-block";
