@@ -69,15 +69,19 @@ button {
   background-color: #d84144;
   padding: 0.3em 1em 0.3em 1em;
   font-family: "Amatic SC", cursive;
-  font-size: 1.8em;
   border-radius: 10px;
+  cursor: pointer; }
+  button:focus {
+    outline: none; }
+
+.home-btn {
+  font-size: 1.8em;
   border: 3px solid #222;
-  cursor: pointer;
   -webkit-transition: font-size 0.5s ease-out;
   -moz-transition: font-size 0.5s ease-out;
   -o-transition: font-size 0.5s ease-out;
   transition: font-size 0.5s ease-out; }
-  button:hover {
+  .home-btn:hover {
     background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
     color: #222;
     border: 3.5px solid #222;
@@ -95,6 +99,7 @@ img {
   margin-top: 0; }
 
 .mapContainer {
+  width: 100%;
   text-align: center;
   background-color: #7bd389; }
   .mapContainer h1, .mapContainer h2 {

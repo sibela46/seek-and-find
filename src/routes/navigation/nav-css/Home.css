@@ -21,17 +21,19 @@
   .Intro h1 {
     font-size: 12vmin; }
 
-.Intro-cont h1 {
-  background-color: #7bd389;
-  margin-top: 120px;
-  margin-bottom: 0;
-  padding: 30px; }
-
-.Intro-cont p {
-  color: #ffffff;
-  margin: 0;
-  background-color: #d84144;
-  padding: 50px; }
+.Intro-cont {
+  position: relative;
+  top: calc(8vmin + 30px); }
+  .Intro-cont h1 {
+    background-color: #7bd389;
+    margin-top: 120px;
+    margin-bottom: 0;
+    padding: 30px; }
+  .Intro-cont p {
+    color: #ffffff;
+    margin: 0;
+    background-color: #d84144;
+    padding: 50px; }
 
 @keyframes slideInFromTop {
   0% {

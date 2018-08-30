@@ -8,7 +8,7 @@ export default class Home extends React.Component {
       <div className="Home">
         <div className = "Intro body-container">
           <h1>Добре дошъл в сайта, в който можеш да намериш всяко едно затънтено кътче на България.</h1>
-          <Link to = "/places"><button>Какво чакаш?</button></Link>
+          <Link to = "/places"><button className="home-btn">Какво чакаш?</button></Link>
         </div>
         <div className = "Intro-cont">
           <h1>Инициатива:</h1>

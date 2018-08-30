@@ -23,8 +23,8 @@ export default class Map extends React.Component{
   }
   render(){
     return (
-      <div className = "mapContainer">
-      <h1>Сега си избери в коя част от страната:</h1>
+      <div className = "mapContainer body-container">
+      <h1>Избери си в коя част от страната искаш да отидеш:</h1>
       <div className = "map">
           <ImageMapper src={bulgaria} map={MAP} width = "800"/>
       </div>

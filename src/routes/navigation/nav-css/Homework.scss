@@ -6,7 +6,7 @@
 /////////////////////////////////////
 .container {
   p {
-    text-align: center;    
+    text-align: center;
   }
 }
 /////////////////////////////////////
@@ -14,6 +14,7 @@
 #slides {
   margin: auto;
   width: 50%;
+  padding: 0 10px 0 10px;
 }
 
 .prev, .next {
@@ -23,7 +24,9 @@
   border: 1px solid $black;
   &:hover{
     font-size: 1em;
-    border: 1px solid $black;
+    background: linear-gradient(rgba(255,255,255,.3), rgba(255,255,255,.3));
+    color: $black;
+    border: 1.5px solid $black;
   }
 }
 
@@ -31,7 +34,6 @@
   position: absolute;
   margin: auto;
   width: 100%;
-  margin-top: 100px;
 }
 
 ////////////////////////////////////

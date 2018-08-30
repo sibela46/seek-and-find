@@ -6,7 +6,8 @@
 
 #slides {
   margin: auto;
-  width: 50%; }
+  width: 50%;
+  padding: 0 10px 0 10px; }
 
 .prev, .next {
   display: inline-block;
@@ -15,13 +16,14 @@
   border: 1px solid #222; }
   .prev:hover, .next:hover {
     font-size: 1em;
-    border: 1px solid #222; }
+    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
+    color: #222;
+    border: 1.5px solid #222; }
 
 .buttons {
   position: absolute;
   margin: auto;
-  width: 100%;
-  margin-top: 100px; }
+  width: 100%; }
 
 .slide {
   display: none;

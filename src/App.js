@@ -24,7 +24,7 @@ export default () => (
       <Route exact path = "/places/mountains" render={()=><SinglePlace place="mountain"/>}/>
       <Route exact path = "/places/villages" render={()=><SinglePlace place="village"/>}/>
       <Route exact path = "/places/sea" render={()=><SinglePlace place="sea"/>}/>
-      <Route path = '/places/sightseeings/:placeId' component = {SightContainer}/>
+      <Route path = '/places/sight/:placeId' component = {SightContainer}/>
       <Route path = '/places/sea/:placeId' component = {SeaContainer}/>
       <Route path = '/places/village/:placeId' component = {VillageContainer}/>
       <Route path = '/places/mountain/:placeId' component = {MountainContainer}/>
