@@ -32,7 +32,7 @@ export default class About extends React.Component {
       <div className ="container">
         <h2>Натискай бутончетата за повече информация</h2>
       </div>
-      <div id = "slides" style = {{width: '300px', height: '300px'}}>
+      <div id = "slides">
         <div className = "slide" style = {{display: 'inline-block', background: '#21A0A0', width: '300px', height: '300px'}}>
           <h2>Здравейте!</h2>
         </div>

@@ -7,7 +7,7 @@
 #slides {
   position: absolute;
   margin: auto;
-  width: 50%;
+  width: -webkit-fill-available;
   padding: 0 10px 0 10px; }
 
 .prev, .next {
