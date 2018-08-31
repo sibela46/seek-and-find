@@ -35,6 +35,20 @@
   }
 }
 
+.languages {
+  float: right;
+  h2 {
+    font-size: 2.5vmin;
+    margin: 0;
+    padding: 2px;
+    cursor: pointer;
+    &:hover {
+      border: none;
+      font-size: 2.5vmin;
+    }
+  }
+}
+
 .logo {
   width: 11vmin;
 }
@@ -74,6 +88,7 @@
 }
 
 .body-container {
+  width: -webkit-fill-available;
   position: relative;
   top: calc(8vmin + 30px);
   display: inline-block;
@@ -92,8 +107,8 @@ button {
 }
 
 .home-btn {
-  font-size: 1.8em;
-  border: 3px solid $black;
+  font-size: 5vmin;
+  border: 2px solid $black;
   -webkit-transition: font-size 0.5s ease-out;
   -moz-transition: font-size 0.5s ease-out;
   -o-transition: font-size 0.5s ease-out;
@@ -138,7 +153,6 @@ img {
 
 .swal-modal {
   margin: auto;
-  transform: translateY(-20%);
   width: 90%;
   height: 500px;
   display: flex;

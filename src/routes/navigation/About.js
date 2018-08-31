@@ -1,5 +1,5 @@
 import React from 'react';
-import './nav-css/Homework.css';
+import './nav-css/About.css';
 import swal from 'sweetalert';
 
 var current = 0;
